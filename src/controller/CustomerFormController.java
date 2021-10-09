@@ -129,6 +129,11 @@ public class CustomerFormController {
             } else {
                 new Alert(Alert.AlertType.WARNING,"Try Again!",ButtonType.OK).show();
             }
+            if (stm.execute()){
+
+            }else {
+
+            }
 
         }
     }
