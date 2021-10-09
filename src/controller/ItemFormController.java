@@ -15,4 +15,7 @@ public class ItemFormController {
    public void itemName(){
        System.out.println("itemName");
    }
+   public String itemID(){
+       return null;
+   }
 }
