@@ -5,27 +5,28 @@
  *  *--------------------------------------------------------------------------------------------
  */
 
-package dto;
+package tm;
 
 /**
  * @author GImhan Pabasara <gimhanpabasara4@gmail.com> (www.gimhanpabasara.tk)
  * @since 10/9/2021
  */
-
-public class CustomerDTO {
+public class CustomerTM {
     private String id;
     private String name;
     private String address;
     private double salary;
+    private Button btn;
 
-    public CustomerDTO() {
+    public CustomerTM() {
     }
 
-    public CustomerDTO(String id, String name, String address, double salary) {
-        this.setId(id);
-        this.setName(name);
-        this.setAddress(address);
-        this.setSalary(salary);
+    public CustomerTM(String id, String name, String address, double salary, Button btn) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.salary = salary;
+        this.btn = btn;
     }
 
     public String getId() {
@@ -60,14 +61,23 @@ public class CustomerDTO {
         this.salary = salary;
     }
 
+    public Button getBtn() {
+        return btn;
+    }
+
+    public void setBtn(Button btn) {
+        this.btn = btn;
+    }
+
     @Override
     public String toString() {
-        return "CustomerDTO{" +
+        return "CustomerTM{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 ", salary=" + salary +
+                ", btn=" + btn +
                 '}';
     }
-}
+
 
